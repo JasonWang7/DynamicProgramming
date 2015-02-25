@@ -15,7 +15,7 @@ int main(){
 	int num = 0,tableSize=0,numElementSeq=0;
 	int input = 0;
 	fp = fopen("List.txt","r");
-	outfp = fopen("Output.txt","w");
+	
 	//read number of elements
 	fscanf(fp, "%d", &num);
 	tableSize = num+1;
@@ -109,6 +109,7 @@ int main(){
 		}
 	}
 	printf("\n");
+	return 0;
 }
 
 void print2DArr(int table[][colSize],int row){

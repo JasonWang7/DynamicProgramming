@@ -8,9 +8,9 @@ default: all
 all: prog
 
 prog: $(TARGET).c
-	$(CC) $(CFLAGS) $_ -o $(TARGET)
+	$(CC) $(CFLAGS) $(TARGET).c -o $(TARGET)
 
-rebuild: clean A3q4
+rebuild: clean prog
 
 clean: 
 	rm -f $(TARGET) *.o *.out
