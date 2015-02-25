@@ -102,6 +102,7 @@ int main(){
 
 	//printing out the results	
 	printf("Num of numbers found in correct sequence: %d \n",numElementSeq);
+	printf("The sequence:\n");
 	for(i=0;i<numElementSeq;i++){
 		printf(" %d",lcs[i]);
 		if((i%10)==0 && i>0){
